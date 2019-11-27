@@ -1,0 +1,22 @@
+version: "3.7"
+
+services:
+
+  node:
+    image: node:alpine
+    container_name: api-gateway
+    volumes:
+      - ./:/app
+    working_dir: /app
+    restart: always
+    expose:
+      -  ${PORT}
+    environment:
+      VIRTUAL_HOST: api.grocelivery.eu
+    command: npm run start
+
+networks:
+  default:
+    external:
+      name: nginx_proxy
+

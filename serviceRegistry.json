@@ -1,0 +1,22 @@
+{
+  "services": [
+    {
+      "name": "Identity provider",
+      "prefix": "auth",
+      "target": "http://idp-webserver",
+      "healthCheckOn": "/status"
+    },
+    {
+      "name": "Geolocalizer",
+      "prefix": "geolocalize",
+      "target": "http://geolocalizer-webserver",
+      "healthCheckOn": "/"
+    },
+    {
+      "name": "Notifier",
+      "prefix": "notify",
+      "target": "http://notifier-webserver",
+      "healthCheckOn": "/"
+    }
+  ]
+}
