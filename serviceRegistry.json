@@ -7,8 +7,8 @@
       "healthCheckOn": "/status"
     },
     {
-      "name": "Geolocalizer",
-      "prefix": "geolocalize",
+      "name": "Geolocalization API",
+      "prefix": "geo",
       "target": "http://geolocalizer-webserver",
       "healthCheckOn": "/"
     },
