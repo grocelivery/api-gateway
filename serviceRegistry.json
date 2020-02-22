@@ -8,7 +8,7 @@
     },
     {
       "name": "Geolocalization API",
-      "prefix": "geo",
+      "prefix": "map",
       "target": "http://geolocalizer-webserver",
       "healthCheckOn": "/"
     },
