@@ -10,7 +10,7 @@ services:
     working_dir: /app
     restart: always
     expose:
-      -  ${PORT}
+      -  20000
     environment:
       VIRTUAL_HOST: api.grocelivery.eu
     command: npm run start
