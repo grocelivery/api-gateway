@@ -18,8 +18,8 @@ const server = http.createServer(function(request, response) {
     });
 
     if (!selectedService) {
-        response.writeHead(404, {"Content-Type": "text/plain"});
-        response.write("404 Not found");
+        response.writeHead(404, {'Content-Type': 'application/json'});
+        response.write('{"error": "Not found"}');
         response.end();
         return;
     }
