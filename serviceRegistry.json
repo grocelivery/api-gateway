@@ -13,9 +13,9 @@
       "healthCheckOn": "/"
     },
     {
-      "name": "Notifier",
-      "prefix": "notify",
-      "target": "http://notifier-webserver",
+      "name": "Mailer",
+      "prefix": "mail",
+      "target": "http://mail-webserver",
       "healthCheckOn": "/"
     }
   ]
