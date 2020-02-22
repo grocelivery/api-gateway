@@ -15,7 +15,7 @@
     {
       "name": "Mailer",
       "prefix": "mail",
-      "target": "http://mail-webserver",
+      "target": "http://mailer-webserver",
       "healthCheckOn": "/"
     }
   ]
