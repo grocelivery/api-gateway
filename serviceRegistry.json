@@ -19,6 +19,12 @@
       "healthCheckOn": "/"
     },
     {
+      "name": "Order Tracker",
+      "prefix": "orders",
+      "target": "http://order-tracker-webserver",
+      "healthCheckOn": "/"
+    },
+    {
       "name": "Mailer",
       "prefix": "mail",
       "target": "http://mailer-webserver",
