@@ -4,12 +4,18 @@
       "name": "Identity provider",
       "prefix": "auth",
       "target": "http://idp-webserver",
-      "healthCheckOn": "/status"
+      "healthCheckOn": "/"
     },
     {
       "name": "Geolocalization API",
       "prefix": "map",
       "target": "http://geolocalizer-webserver",
+      "healthCheckOn": "/"
+    },
+    {
+      "name": "Ads Catalog",
+      "prefix": "ads",
+      "target": "http://ads-catalog-webserver",
       "healthCheckOn": "/"
     },
     {
